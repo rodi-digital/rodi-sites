@@ -23,7 +23,7 @@
   --color-warm-light: #f5e6c8;
 
   --font-heading: 'Instrument Serif', serif;
-  --font-body: 'Inter', sans-serif;
+  --font-body: 'Geist', sans-serif;
 }
 
 :root {
@@ -145,8 +145,9 @@ body {
 
 .glass-card-dark {
   background: rgba(255, 255, 255, 0.03);
-  border: 1px solid rgba(155, 140, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.06);
   backdrop-filter: blur(12px);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.08);
 }
 
 /* ─── Gradient border ─── */

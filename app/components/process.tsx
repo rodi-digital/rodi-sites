@@ -90,7 +90,7 @@ export function Process({ steps }: { steps: Step[] }) {
                 delay: i * 0.15,
                 ease,
               }}
-              className="group relative"
+              className={`group relative ${i === 1 ? 'lg:translate-y-8' : i === 2 ? 'lg:translate-y-16' : ''}`}
             >
               {/* Connector line between cards */}
               {i < sorted.length - 1 && (

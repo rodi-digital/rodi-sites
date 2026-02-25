@@ -73,7 +73,7 @@ export function Hero({
   return (
     <section
       ref={sectionRef}
-      className="gradient-mesh-light noise-overlay relative min-h-screen overflow-hidden"
+      className="gradient-mesh-light noise-overlay relative min-h-[100dvh] overflow-hidden"
     >
       {/* Subtle dot grid */}
       <div className="dot-grid pointer-events-none absolute inset-0 z-[2]" aria-hidden="true" />
@@ -106,7 +106,7 @@ export function Hero({
             ? undefined
             : { opacity: contentOpacity, y: contentY, willChange: 'transform, opacity' }
         }
-        className="relative z-10 mx-auto grid max-w-7xl items-center gap-12 px-6 pt-36 pb-20 lg:min-h-screen lg:grid-cols-[1.1fr_0.9fr] lg:gap-20 lg:px-8 lg:pt-0 lg:pb-0"
+        className="relative z-10 mx-auto grid max-w-7xl items-center gap-12 px-6 pt-36 pb-20 lg:min-h-[100dvh] lg:grid-cols-[1.1fr_0.9fr] lg:gap-20 lg:px-8 lg:pt-0 lg:pb-0"
       >
         {/* Left: copy */}
         <div>
@@ -284,7 +284,7 @@ export function Hero({
                   </svg>
                 </div>
                 <div>
-                  <p className="text-sm font-semibold text-foreground">99.9% uptime</p>
+                  <p className="text-sm font-semibold text-foreground">99.8% uptime</p>
                   <p className="text-xs text-muted">Altijd online</p>
                 </div>
               </div>

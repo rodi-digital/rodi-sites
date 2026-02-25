@@ -73,7 +73,7 @@ export function Pricing({
         </div>
 
         {/* Tier cards */}
-        <div className="mt-16 grid gap-6 lg:grid-cols-3">
+        <div className="mt-16 grid gap-6 lg:grid-cols-[1fr_1.15fr_1fr]">
           {tiers.map((tier, i) => (
             <motion.div
               key={tier.name}
@@ -86,7 +86,7 @@ export function Pricing({
                 ease,
               }}
               className={`relative flex flex-col overflow-hidden rounded-2xl ${tier.highlighted
-                  ? 'gradient-border shadow-xl shadow-primary/10'
+                  ? 'gradient-border shadow-xl shadow-primary/10 lg:-translate-y-4'
                   : 'border border-border/60'
                 } bg-card`}
             >

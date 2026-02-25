@@ -1,6 +1,6 @@
 import type { ReactNode } from 'react';
 import type { Metadata } from 'next';
-import { Instrument_Serif, Inter } from 'next/font/google';
+import { Instrument_Serif, Geist } from 'next/font/google';
 import './globals.css';
 
 const instrumentSerif = Instrument_Serif({
@@ -10,7 +10,7 @@ const instrumentSerif = Instrument_Serif({
   display: 'swap',
 });
 
-const inter = Inter({
+const geist = Geist({
   subsets: ['latin'],
   variable: '--font-body',
   display: 'swap',
@@ -48,7 +48,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html
       lang="nl"
-      className={`${instrumentSerif.variable} ${inter.variable}`}
+      className={`${instrumentSerif.variable} ${geist.variable}`}
     >
       <body>
         <a

@@ -58,7 +58,7 @@ export function Testimonials({
         </div>
 
         {/* Cards */}
-        <div className="mt-16 grid gap-6 lg:grid-cols-3">
+        <div className="mt-16 grid gap-6 lg:grid-cols-[1.2fr_0.8fr] lg:grid-rows-[auto_auto]">
           {testimonials.map((t, i) => (
             <motion.div
               key={t.slug}
@@ -70,7 +70,7 @@ export function Testimonials({
                 delay: i * 0.12,
                 ease,
               }}
-              className="glass-card-dark group flex flex-col justify-between rounded-2xl p-8 transition-all duration-500 hover:bg-white/[0.05] hover:border-primary-bright/20 md:p-10"
+              className={`glass-card-dark group flex flex-col justify-between rounded-2xl p-8 transition-all duration-500 hover:bg-white/[0.05] hover:border-primary-bright/20 md:p-10 ${i === 0 ? 'lg:row-span-2' : ''}`}
             >
               <div>
                 {/* Star rating */}

@@ -17,7 +17,7 @@ export function Button({
   size?: 'default' | 'large';
 }) {
   const baseStyles =
-    'relative inline-flex items-center justify-center rounded-full font-semibold transition-colors cursor-pointer overflow-hidden';
+    'relative inline-flex items-center justify-center rounded-full font-semibold transition-colors cursor-pointer overflow-hidden active:translate-y-px';
   const sizeStyles = {
     default: 'px-8 py-4 text-base',
     large: 'px-10 py-5 text-lg',
